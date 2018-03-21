@@ -11,7 +11,6 @@ app.set('view engine','ejs');
 app.use(express.static('public'));
 
 app.get('/',(request,response) => {
-    console.log("length is " + homeJSON.sliders.length);
     response.render('home',{commonObj:commonJSON, homeObj:homeJSON})
 })
 
