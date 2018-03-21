@@ -4,8 +4,7 @@
 <body>
     <div id="site-content">	
         <%- include('partials/common/header.ejs',{header : commonObj.header}) %>
-        <%- include('partials/home/slider.ejs') %>
-        
+        <%- include('partials/home/slider.ejs',{sliders : homeObj.sliders}) %>        
         <main class="main-content"> 
             <%- include('partials/home/news.ejs') %>
             <%- include('partials/home/ourservices.ejs') %>

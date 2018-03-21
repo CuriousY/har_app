@@ -1,0 +1,25 @@
+{
+    "sliders": [
+        {
+            "servicesubtitle": "Expert facitlity for",
+            "servicetitle": "Bridal Makeup",
+            "servicedescription": "expert in bridal makeup .....",
+            "imageurl": "dummy/slider-1.jpg",
+            "link" : "#"
+        },
+        {
+            "servicesubtitle": "Expert facitlity for",
+            "servicetitle": "Casual Makeup",
+            "servicedescription": "expert in bridal makeup .....",
+            "imageurl": "dummy/slider-2.jpg",
+            "link" : "#"
+        },
+        {
+            "servicesubtitle": "Expert facitlity for",
+            "servicetitle": "New Makeup",
+            "servicedescription": "expert in bridal makeup .....",
+            "imageurl": "dummy/slider-3.jpg",
+            "link" : "#"
+        }
+    ]
+}

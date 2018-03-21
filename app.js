@@ -2,16 +2,17 @@ const express = require('express')
       path = require('path')
       request = require('request')
       app = express(),
-      commonJSON = require('./config/common.json');
+      commonJSON = require('./config/common.json')
+      homeJSON = require('./config/home.json');
 
 const port = process.env.PORT || 8080;
 
-let posts = require('./config.json').posts;
 app.set('view engine','ejs');
 app.use(express.static('public'));
 
 app.get('/',(request,response) => {
-    response.render('home',{commonObj:commonJSON})
+    console.log("length is " + homeJSON.sliders.length);
+    response.render('home',{commonObj:commonJSON, homeObj:homeJSON})
 })
 
 app.get('/about',(request,response) => {
@@ -30,9 +31,9 @@ app.get('/gallery',(request,response) => {
     response.render('gallery',{commonObj:commonJSON})
 })
 
-app.get('*',(request,response) => {
-    response.render('home',{commonObj:commonJSON})
-})
+// app.get('*',(request,response) => {
+//     response.render('home',{commonObj:commonJSON})
+// })
 
 app.listen(port,() => {
     console.log(`listening on ${port}`);
