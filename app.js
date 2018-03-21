@@ -3,6 +3,8 @@ const express = require('express')
       request = require('request')
       app = express();
 
+const port = process.env.PORT || 8080;
+
 let posts = require('./config.json').posts;
 app.set('view engine','ejs');
 app.use(express.static('public'));
@@ -29,6 +31,6 @@ app.get('/gallery',(request,response) => {
 
 
 
-app.listen(3000,() => {
+app.listen(port,() => {
     console.log('listening to 3000')
 })
