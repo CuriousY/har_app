@@ -1,0 +1,15 @@
+{
+   "posts" :[{
+      "id": 1,
+      "author": "John",
+      "title": "Templating with EJS using config",
+      "body": "Blog post number 1"
+    },
+    {
+      "id": 2,
+      "author": "Drake",
+      "title": "Express: Starting from the Bottom",
+      "body": "Blog post number 2"
+    }]
+  
+}
